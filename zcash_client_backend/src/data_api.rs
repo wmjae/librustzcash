@@ -2437,7 +2437,7 @@ pub trait WalletWrite: WalletRead {
     /// purposes.
     ///
     /// There may be restrictions on heights to which it is possible to truncate. Specifically, it
-    /// will only be possible to truncate to heights at which is is possible to create a witness
+    /// will only be possible to truncate to heights at which it is possible to create a witness
     /// given the current state of the wallet's note commitment tree.
     fn truncate_to_height(&mut self, max_height: BlockHeight) -> Result<BlockHeight, Self::Error>;
 
